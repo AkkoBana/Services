@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.ui.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Services"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backgroundButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start background service"
+        app:layout_constraintBottom_toTopOf="@+id/foregroundButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/foregroundButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start foreground service"
+        app:layout_constraintBottom_toTopOf="@+id/boundButton"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundButton" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boundButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start bound service"
+        app:layout_constraintBottom_toTopOf="@+id/startUploadButton"
+        app:layout_constraintTop_toBottomOf="@+id/foregroundButton" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startUploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start upload file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

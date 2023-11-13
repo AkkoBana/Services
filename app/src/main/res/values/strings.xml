@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Services</string>
+    <string name="run_is_active">Run is active</string>
+    <string name="hello">hello</string>
+    <string name="service_started">Service started</string>
+    <string name="stop_service">Stop service</string>
+    <string name="start_service">Start service</string>
+</resources>
